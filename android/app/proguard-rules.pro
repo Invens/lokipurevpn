@@ -1,0 +1,4 @@
+-dontwarn com.atom.sdk.**
+-keep class com.atom.sdk.** { *; }
+-keep interface com.atom.sdk.** { *; }
+-keep class com.atom.core.models.** { *; }
