@@ -1,8 +1,12 @@
 allprojects {
     repositories {
-        google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        google()
+        jcenter() //After February 1, 2022 jcenter() will not work anymore.
+        maven {
+            url 'https://jitpack.io'
+            credentials { username authToken }
+        }
         maven { url "https://bitbucket.org/purevpn/atom-android-releases/raw/master" }
     }
 }
